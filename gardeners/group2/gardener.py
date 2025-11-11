@@ -211,7 +211,7 @@ class Gardener2(Gardener):
         interactions at each step.
         """
         plantable_varieties = self._get_sorted_varieties()
-        candidate_positions = self._generate_placement_grid()
+        candidate_positions = self._generate_hex_grid_positions()
         is_first_plant = not self.garden.plants
         while plantable_varieties:
             underrepresented_species = self._get_underrepresented_species()
